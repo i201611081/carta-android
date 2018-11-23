@@ -10,7 +10,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.blikoon.qrcodescanner.QrCodeActivity;
 import com.google.zxing.Result;
 
@@ -26,7 +25,7 @@ TextView a;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-a= (TextView)findViewById(R.id.a);
+        a= (TextView)findViewById(R.id.a);
 
 
 
@@ -92,6 +91,7 @@ a= (TextView)findViewById(R.id.a);
     public void a(View view) {
 Intent siguiente = new Intent(SecondActivity.this,CartaActivity.class);
  startActivity(siguiente);
+ finish();
 
 
 

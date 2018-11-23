@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void RequestFace(String user,String pass){
 
-        String URL = "https://f244abc1.ngrok.io";
+        String URL = "https://ff4f1d8a.ngrok.io/login";
         Map<String, Object> object= new HashMap<>();
         object.put("user",user);
         object.put("pass",pass);

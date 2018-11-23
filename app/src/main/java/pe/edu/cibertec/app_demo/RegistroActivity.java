@@ -2,12 +2,13 @@ package pe.edu.cibertec.app_demo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class RegistroActivity extends AppCompatActivity implements View.OnClickListener {
+public class RegistroActivity extends AppCompatActivity  {
 
     EditText nombreReg;
     EditText contraseñaReg;
@@ -19,7 +20,6 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-
         nombreReg = (EditText)findViewById(R.id.etUsuarioR);
         contraseñaReg =(EditText)findViewById(R.id.etContraseña);
         correoReg = (EditText)findViewById(R.id.etCorreo);
@@ -53,8 +53,4 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 
-    @Override
-    public void onClick(View view) {
-
-    }
 }
